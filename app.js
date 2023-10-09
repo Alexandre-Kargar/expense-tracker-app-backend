@@ -11,9 +11,7 @@ const PORT = process.env.PORT
 
 // middlewares
 app.use(express.json())
-app.use(cors())
-
-
+app.use(cors({"https://expense-tracker-app-fsad.onrender.com/"}))
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
 
