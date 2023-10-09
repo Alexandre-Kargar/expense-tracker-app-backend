@@ -12,7 +12,7 @@ const PORT = process.env.PORT
 // middlewares
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:3000/", "https://expense-tracker-app.onrender.com/"]
+    origin: ["http://localhost:3000/", "https://expense-tracker-app-fsad.onrender.com"]
 }))
 
 
